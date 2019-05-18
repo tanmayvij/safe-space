@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   params: string = '';
   lat: number;
   lng: number;
+  mapskey: string = ''; //  Update Google Maps Static API key
   constructor(private http: HttpClient) {}
   ngOnInit() {
           navigator.geolocation.getCurrentPosition(position => {
@@ -22,7 +23,7 @@ export class HomeComponent implements OnInit {
                 this.count++;
                 this.params += '&markers=color:red%7Clabel:x%7C' + point['latitude']  + ',' + point['longitude'];
               }
-              this.http.get('https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap' + this.params).subscribe(data2 => {
+              this.http.get('https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap&key=' + this.mapskey + this.params).subscribe(data2 => {
                 this.mapurl = data2['url'];
               });
             })

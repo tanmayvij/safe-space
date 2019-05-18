@@ -10,7 +10,7 @@ MEAN Stack based web app focused on women's safety in crowded spaces taking adva
 
 > Angular CLI
 
-> Google Maps Static API Key
+> Google Maps Static API Key (Update in the 'mapskey' variable inside HomeComponent class in src/app/home/home.component.ts)
 
 ## Installation and Running
 
