@@ -1,27 +1,25 @@
-# HackathonApp
+# SafeSpace
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+MEAN Stack based web app focused on women's safety in crowded spaces taking advantage of AI.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> node v8+
 
-## Code scaffolding
+> npm v5+
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Angular CLI
 
-## Build
+> Google Maps Static API Key
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Installation and Running
 
-## Running unit tests
+> npm i
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> npm run build
 
-## Running end-to-end tests
+> npm start
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Note:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This app can be ported to Android Platform after compilation.
