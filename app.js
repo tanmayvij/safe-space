@@ -17,8 +17,11 @@ app.use(function(req, res, next) {
 });
 app.use(bodyParser.json({ limit: '5mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '5mb' }));
-app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', routes);
+app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/', (req, res) => {
+	res.sendFile(__dirname + '/public/index.html');
+});
 
 var server = app.listen(app.get('port'), function() {
 	console.log(server.address());
